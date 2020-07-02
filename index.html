@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Den Productions</title>
+<link rel="shortcut icon" href="images/statue64.ico" />
+<script src="den.js"></script>
+<link rel="stylesheet" href="denpro.css" type="text/css">
+
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 6;
+
+//menu constructor
+function menu(allitems,thisitem,startstate)
+{
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;
+  this.numberofmenuitems = 6;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj)
+{
+  for (var i=1; i<= theobj.numberofmenuitems; i++)
+  {
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+
+function closesubnav(event)
+{
+  if ((event.clientY <48)||(event.clientY > 88))
+  {
+    for (var i=1; i<= numofitems; i++)
+	{
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+
+</head>
+
+<body onmousemove="closesubnav(event);">
+
+<!----  start masthead  ---->
+<div id="masthead">
+    <div id="siteName">Den Productions</div>
+</div>
+<!----  end masthead  ---->
+
+<!----  start globalNav  ---->
+<div id="globalNav">
+<!----  start globalLinks  ---->
+	<div id="globalLink">
+    	<a href='index.htm' id="gl1" class='glink' onmouseover="ehandler(event,menuitem1);">Home</a> <img src='images/vline2.png' width='1' height='20' />
+		<a href='about.htm' id="gl2" class='glink' onmouseover="ehandler(event,menuitem2);">About</a> <img src='images/vline2.png' width='1' height='20' />
+		<a href='services.htm' id="gl3" class='glink' onmouseover="ehandler(event,menuitem3);">Services</a> <img src='images/vline2.png' width='1' height='20' />
+		<a href='samples.htm' id="gl4" class='glink' onmouseover="ehandler(event,menuitem4);">Samples</a> <img src='images/vline2.png' width='1' height='20' />
+		<a href='links.htm' id="gl5" class='glink' onmouseover="ehandler(event,menuitem5);">Links</a> <img src='images/vline2.png' width='1' height='20' />
+		<a href="mailto:Bryan@DenProductions.com" target="_blank" id="gl6" class="glink" onmouseover="ehandler(event,menuitem6);">Email Me</a>
+
+		<div id="subglobal1" class="subglobalNav"> return to the Den Productions home page</div>
+		<div id="subglobal2" class="subglobalNav"> a little about Den Productions . . .</div>
+		<div id="subglobal3" class="subglobalNav"> Den Productions services . . .</div>
+		<div id="subglobal4" class="subglobalNav"> some samples  . . .</div>
+		<div id="subglobal5" class="subglobalNav"> links page . . .</div>
+		<div id="subglobal6" class="subglobalNav"> send me an email . . .</div>
+		<script type="text/javascript">
+		<!--
+			var menuitem1 = new menu(6,1,"hidden");
+			var menuitem2 = new menu(6,2,"hidden");
+			var menuitem3 = new menu(6,3,"hidden");
+			var menuitem4 = new menu(6,4,"hidden");
+			var menuitem5 = new menu(6,5,"hidden");
+			var menuitem6 = new menu(6,6,"hidden");
+		// -->
+		</script>
+    </div>
+<!----  end globalLinks  ---->
+</div>
+<!----  end globalNav  ---->
+
+<!----  start welcomeHeader  ---->
+<div class="welcomeHeader"><script language="javascript">document.write(parent.getTodaysDate());</script></div>
+<!----  end welcomeHeader  ---->
+
+<!----  start mainPageCell  ---->
+<div id="mainPageCell">
+<!----  start pageLeft  ---->
+	<div id="pageLeft">
+		<p class="padLeft6">
+		Custom service for the individual or small business.<br>Serving the needs of the individual and small business with the respect of big business!
+		</p>
+		<p class="padLeft6">
+		Located in Chesapeake, Virginia<br>Connecting you to the world!
+		</p>
+        <!--
+		<br />
+        <hr class="hrBorder" />
+<!----  start pageLeftLinks  ----
+        <div class="pageLeftLinks">
+        	<h3 class="padLeft4"></h3>
+            <hr class="hrBorder" />
+		</div>
+<!----  end pageLeftLinks  ----
+		-->
+	</div>
+<!----  end pageLeft  ---->
+
+<!----  start mainContent  ---->
+	<div id="mainContent">
+
+<!----  start mainContentTop  ---->
+    	<div class="mainContentTop">
+			<br>
+			<h4>Den Productions Samples coming soon!</h4>
+			<p>
+			<br><br><br><br><br>
+			</p>
+        </div>
+<!----  end mainContentTop  ---->
+	</div>
+	<div id="bottom">
+		<script language='javascript'>
+			document.write(parent.copyright());
+		</script>
+	</div>
+<!----  end mainContent  ---->
+</div>
+<!----  end mainPageCell  ---->
+
+</body>
+</html>
