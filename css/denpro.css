@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/* Den Productions CSS Document */
+/***********************************************/
+/* Den Productions
+/* created 08-14-11
+/* updated 08-14-11
+/* margin: top right bottom left               */
+/***********************************************/
+body {
+	font-size: 8pt;
+	color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #3399ee;
+	line-height: 1.166;
+	margin: 0px;
+	padding: 0px;
+	background: black;
+}
+/******* hyperlink and anchor tag styles *******/
+a:link, a:visited{
+	color: #005FA9;
+	text-decoration: none;
+	/*scrollbar-arrow-color: #ff0000;*/
+}
+a:hover{
+	text-decoration: underline;
+	color: #005FA9;
+}
+a.calendar:hover{
+	text-decoration: underline;
+	color: #FF0000;
+}
+/************* masthead styles ****************/
+#masthead {
+    height: 56px;
+	background: #000000;
+	font-size: 26px;
+	color: white;
+	border-bottom: 1px solid #000000;
+}
+#logoLeft {
+    position: absolute;
+	top: 2px;
+	left: 2px;
+	background: #666F74;
+}
+#logoRight {
+    position: absolute;
+	top: 2px;
+	right: 2px;
+	background: #666F74;
+}
+#siteName{
+	margin: 0px;
+	padding: 6px 0px 6px 0px;
+	color: #1144FF;
+	font-weight: normal;
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+	font: 120% Verdana, Arial, Helvetica, sans-serif;
+	text-shadow: rgba(0, 0, 255, 1) 3px 3px 4px; /* added 0-19-11 */
+}
+.siteNameLink:link .siteNameLink:visited .siteNameLink:hover {
+	text-decoration: none;
+	color: #005fa9;
+}
+/************* globalNav styles ****************/
+#globalNav{
+	position: relative;
+	top: 0px;
+	width: 100%;
+	min-width: 640px;
+	height: 32px;
+	color: #99CCFF;
+	padding: 0px;
+	margin: 0px;
+	background-image:url(../images/glbnav_background4.png);
+	/*text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 3px; /* added 0-19-11 */
+	text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 2px; /* added 0-19-11 */
+}
+#globalNav img{
+	margin-bottom: -4px;
+}
+#globalLink{
+	position: relative;
+	top: 6px;
+	height: 22px;
+	min-width: 640px;
+	padding: 0px;
+	margin: 0px;
+	z-index: 100;
+	text-align: center;
+}
+a.glink, a.glink:visited{
+  	font-size: small;
+  	/*color: #99CCFF;*/
+	color: #000000;
+	font-weight: bold;
+	margin: 0px;
+	padding: 2px 10px 4px 10px;
+}
+a.glink:hover{
+	color: #99CCFF;
+  	/*background-image: url(images/glblnav_selected4.png);*/
+	text-decoration: none;
+	/*text-shadow: rgba(255, 0, 0, 0.4) 2px 2px 3px; /* added 0-19-11 */
+	text-shadow: rgba(255, 0, 0, 0.8) 2px 2px 3px; /* added 0-19-11 */
+}
+
+.subglobalNav{
+    font-size:75%;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+	width: 100%;
+/*	min-width: 640px; */
+	height: 20%;
+	padding: 0px 0px 0px 10px;
+	visibility: hidden;
+	color: #1999e6;
+}
+/***********************************************/
+.welcomeHeader {
+    font-weight: bold;
+	font-size: 10pt;
+	line-height: 1.5;
+	color: gray;
+	margin: 10px 80px 0px 80px;
+	text-align: center;
+}
+/***********************************************/
+/* Layout Divs       t,r,b,l                   */
+/***********************************************/
+#mainPageCell{
+	position:absolute;
+	top: 140px;
+	left: 6px;
+	right: 6px;
+
+	background-color: #000033;
+	border: 1px solid #0000ff;
+}
+/************** pageLeft styles ****************/
+#pageLeft{
+	float: left;
+	width: 186px; /* 178px; */
+	padding: 0px;
+	background-color: #000033;
+	border: solid #0000ff;
+	border-width: 1px 1px 1px 1px;
+/*	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc; */
+	font: small Verdana, Arial, Helvetica, sans-serif;
+}
+.pageLeftLinks{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	line-height: 18px;
+}
+.pageLeftLinks a{
+	display: block;
+}
+.padLeft4 {
+	padding-left: 4px;
+}
+.padLeft6 {
+	padding-left: 6px;
+	font-size: 11px;
+}
+.tshadow {
+	text-shadow: #000 1px 1px 4px;
+}
+.hrBorder {
+	/* border-top: 1px solid #cccccc; */
+	border-top: 1px solid #0000ff;
+	border-left: 0px;
+}
+/***********************************************/
+/************** main area styles ***************/
+#mainContent{
+/*	position:absolute; */
+/*	left: 178px; */
+	padding: 6px 0px 0px 0px;
+	margin: 0px 0px 0px 190px; /* 182px; */
+	border: solid #0000ff;
+	border-width: 1px 1px 0px 1px;
+}
+
+#mainContent img{
+	/*float: left;*/
+	padding: 0px 10px 0px 0px;
+	margin: 0 5px 5px 0;
+}
+/* adjust margins to change separation between the feature image and text flowing around it */
+
+.mainContentLogin{
+	width: 300px;
+	padding: 10px 20px 10px 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+/*	height: 80px; */
+	margin-top: 40px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+}
+
+.mainContentTop{
+	padding: 10px 0px 0px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+/*	height: 80px; */
+	border-bottom: 1px solid #0000ff;
+}
+.mainContentBottom{
+	padding: 0px 0px 10px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	border-bottom: 1px solid #0000ff;
+}
+.mainContentProducts{
+	padding: 10px 10px 0px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+/*	height: 80px; */
+	border-bottom: 1px solid #0000ff;
+}
+.mainContentLargeText{
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #334d55;
+	padding: 0px 0px 5px 0px;
+	text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 3px; /* added 0-19-11 */
+}
+#listContent{
+	position:absolute;
+	left: 178px;
+	padding: 10px 0px 0px 10px;
+	margin: 0px 0px 0px 0px;
+}
+#smallWindowCell{
+	top: 10px;
+	left: 1%;
+	right: 1%;
+	width: 98%;
+	background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.25;
+	padding: 10px 0px 10px 10px;
+}
+.smallWindowTitle{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	padding: 4px 0px 0px 0px;
+}
+#hiddenLayer {
+	visibility:hidden;
+} /* invoice_Information.php */
+/************** #bottom styles *************/
+/*******************************************/
+#bottom{
+    text-align:center;
+	clear: both;
+	border: 0px solid #006699;
+	font-size: 75%;
+	color: #005a8c;
+	padding: 10px 10px 10px 10px;
+	margin-top: 0px;
+}
+/* negative top margin pulls siteinfo up so its top border overlaps (and thus lines up with)
+	the bottom border of the navBar in cases where they "touch" */
+#bottom img{
+	padding: 4px 4px 4px 0px;
+	vertical-align: middle;
+}
+/************** header tag styles **************/
+h1{  font: bold 120% Verdana, Arial, Helvetica, sans-serif;  color: #334d55;  margin: 0px;  padding: 0px;  }
+h2{  font: bold 114% Verdana, Arial, Helvetica, sans-serif;  color: #006699;  margin: 0px;  padding: 0px;  }
+h3{  font: bold 100% Verdana, Arial, Helvetica, sans-serif;  color: #334d55;  margin: 0px;  padding: 0px;  }
+h4{  font: 175% Verdana, Arial, Helvetica, sans-serif;  color: #2255FF;  margin: 0px;  padding: 0px; text-align: center;  }
+h5{  font-size: 110%;  color: #666F74;  margin: 0px;  padding: 0px;  }
+h6{  font: bold 140% Verdana, Arial, Helvetica, sans-serif;  color: #334d55;  margin: 0px;  padding: 0px;  }
+/************** text styles ********************/
+.styleBold { font-weight: bold; }
+.styleShadow { text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 2px; /* added 0-19-11 */ }
+
+.styleSmall {font-size: small;}
+.styleSmallBlue {font-size: small; color: #005FA9;}
+.styleXsmall { font-size: x-small; }
+.styleXsmallBlue { font-size: x-small; color: #005FA9; }
+.styleXXsmall { font-size: xx-small; color: #005FA9; }
+.style12 { font-size:12px; }
+.style14 { font-size:14px; }
+
+.styleWhite { color:#FFFFFF; }
+.styleRed { color: #FF0000; }
+.styleGreen { color: #009900; }
+.styleBlue { color: #0000FF; }
+.styleYellow { color: #FFDD00; }
+.styleGrey { color: #999999; }
+
+.inPunch { color: #009900; }
+.outPunch { color: #FF0000; }
+.lunchPunch { color: #0000FF; }
+.breakPunch { color: #FF9900; }
+
+.styleEvent { vertical-align:bottom; color:#666666; }
+
+.styleEventCurrentDay { background:#CCFFFF; } /* current day */
+.styleEventBlackoutCurrentDay { background:#AABBCC; } /* current day is blackout day */
+.styleEventBlackout { background:#BBBBBB; } /* blackout day */
+.styleEventBlackoutWarning { background:#FFFF88; } /* blackout warning */
+.styleEventBlackoutOver { background:#FF9999; } /* past blackout */
+.styleOtherMonth { background:#E8FFFF; } /* previous or past month days */
+
+.blueLink a:link, .blueLink a:visited { color: #0044BB; text-decoration: none; }
+.redLink a:link, .redLink a:visited { color: #C80000;  text-decoration: none; }
+.redLink a:hover { text-decoration: underline; }
+
+#userDisplay{
+	position:absolute;
+	left: 10px;
+	padding: 4px 0px 0px 0px;
+	margin: 0px 0px 0px 0px; /* 182px; */
+	color:#009900;
+/*	border: solid #cccccc;
+	border-width: 1px 1px 0px 1px; */
+}
+
+#alignInputCenter { text-align: center; }
+#alignInputRight { text-align: right; }
+
+#smallWindow { position: absolute;  top: 10px;  left: 10px; } /* event edit.php, events.php, items due.php */
+#addCCInfo { visibility: hidden; } /* ccInfo.php */
+#CCInfo { visibility: hidden; } /* ccInfo.php */
+
+#securedInfo { visibility: hidden; } /* added 01-04-11 to employee_Information.php */
+
+
+/********************* end **********************/
