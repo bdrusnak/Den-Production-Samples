@@ -40,10 +40,10 @@
             </center>
               </p>
             </div>
+            <footer class="zone blue" style="grid-column-start: span 3;">
+                <script language='javascript'>document.write(parent.copyright());</script>
+            </footer>
         </div>
-        <footer class="zone blue">
-            <script language='javascript'>document.write(parent.copyright());</script>
-        </footer>
     </div>
 </body>
 </html>
