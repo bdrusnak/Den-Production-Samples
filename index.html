@@ -35,8 +35,8 @@
               <center>
               <br><a href="http://greatbridgehigh.com" id="bodyLink"><img src="images/gbh.png"><br>Great Bridge High</a><br>
               <br><a href="https://github.com/bdrusnak" id="bodyLink"><img src="images/github.png"><br>GitHub</a><br>
-              <br><a href="../sample1/index.php" id="bodyLink"><img src="images/sample1.png"><br>Sample 1 (admin, password)</a><br>
-              <br><a href="../sample2/index.php" id="bodyLink"><img src="images/sample2.png"><br>Sample 2 (admin, balloon)</a><br>
+              <br><a href="http://denproductions.com/sample1/index.php" id="bodyLink"><img src="images/sample1.png"><br>Sample 1 (admin, password)</a><br>
+              <br><a href="http://denproductions.com/sample2/index.php" id="bodyLink"><img src="images/sample2.png"><br>Sample 2 (admin, balloon)</a><br>
             </center>
               </p>
             </div>
